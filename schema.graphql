@@ -1,0 +1,14 @@
+type Query {
+  getEthByAddress: ETH_RESULT!
+  getTotalSupplyEth: ETH_RESULT!
+}
+
+"""
+List down all fields returned from the provided APIs
+"""
+type ETH_RESULT {
+  status: String!
+  result: Float!
+  message: String!
+  balance: Float!
+}
